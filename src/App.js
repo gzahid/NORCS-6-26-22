@@ -15,7 +15,6 @@ function App() {
     <div className="App">
       <CardContainer cards={cards} />
       <ButtonContainer cardHandle = {cardHandle} />
-     
     </div>
   );
 }
