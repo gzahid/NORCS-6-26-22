@@ -5,9 +5,10 @@ import CardContainer from "./components/cardContainer";
 
 
 function App() {
+  const randomNum = Math.floor(Math.random() * 10); 
   return (
     <div className="App">
-      <CardContainer />
+      <CardContainer randomNum={randomNum} />
       <ButtonContainer />
      
     </div>
