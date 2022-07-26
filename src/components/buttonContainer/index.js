@@ -1,8 +1,8 @@
-export default function ButtonContainer(){
+export default function ButtonContainer({cardHandle}){
     return (
         <div>
             <h1>ButtonContainer</h1>
-            <button>Make Card</button>
+            <button onClick={cardHandle}>Make Card</button>
         </div>
     );
 }

@@ -2,14 +2,19 @@ import './App.css';
 import ButtonContainer from "./components/buttonContainer";
 //import Card from "./components/card";
 import CardContainer from "./components/cardContainer";
-
+import {useState} from "react";
 
 function App() {
-  const randomNum = Math.floor(Math.random() * 10); 
+  const [cards, setcards] = useState([]);
+  console.log(cards);
+  function cardHandle (){
+    const randomNum = Math.floor(Math.random() * 10);
+    setcards([...cards, randomNum]);
+  }
   return (
     <div className="App">
-      <CardContainer randomNum={randomNum} />
-      <ButtonContainer />
+      <CardContainer cards={cards} />
+      <ButtonContainer cardHandle = {cardHandle} />
      
     </div>
   );

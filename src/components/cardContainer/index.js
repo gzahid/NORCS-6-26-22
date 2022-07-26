@@ -1,10 +1,11 @@
 import Card from  "../card";
 
-export default function CardContainer(props){
-    console.log(props.randomNum);
+export default function CardContainer(randomNum, name){
+    console.log(randomNum);
     return(
         <>
-            {props.randomNum}
+            {randomNum}
+            {name}
             <Card />
         </>
     );
